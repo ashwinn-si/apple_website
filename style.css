@@ -341,6 +341,7 @@ footer div p{
     margin: 1% 0;
 }
 @media (max-width: 768px){
+    
     .menu_icon{
         visibility: visible;
     }
