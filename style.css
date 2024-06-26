@@ -358,6 +358,7 @@ footer div p{
     }
     .div1 ,.div2 ,.div3,.div4,.div5,.div6{
         height: 80vh;
+        width: 100%;
     }
     .div2 ,.div4,.div6{
         margin-right:0px;
