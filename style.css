@@ -365,4 +365,7 @@ footer div p{
     .container_2 .head{
         font-size: 2rem;
     }
+    .container_4 img{
+        width: auto;
+    }
 }
