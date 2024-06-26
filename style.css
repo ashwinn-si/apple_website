@@ -192,11 +192,18 @@ i{
 }
 
 .container_3 {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(3, 80vh);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    }
+    .div1 ,.div2 ,.div3,.div4,.div5,.div6{
+        flex: 1 1 49%;
+        width: 49%;
+        height: 80vh;
     }
     .div1 {
         background: linear-gradient(to bottom, rgb(173,220,238), rgb(242,246,247));
@@ -204,7 +211,7 @@ i{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        grid-area: 1 / 1 / 2 / 2; 
+ 
     }
     .div1 .head,.div2 .head,.div3 .head,.div4 .head,.div5 .head,.div6 .head{
         font-size: 2rem;
@@ -233,7 +240,7 @@ i{
         width: 92%;
     }  
     .div2 ,.div3,.div4,.div5,.div6{ 
-        grid-area: 1 / 2 / 2 / 3; 
+ 
         background-color: rgb(247, 247, 247);
         display: flex;
         justify-content: center;
@@ -275,13 +282,13 @@ i{
     .div3 { 
         color: white;
         background-color: black;
-        grid-area: 2 / 1 / 3 / 2; 
+ 
     }
     .div3 img{
         width: 50%;
     }
     .div4 { 
-        grid-area: 2 / 2 / 3 / 3; 
+ 
         background-color: black;
         color: white;
     }
@@ -292,8 +299,11 @@ i{
         text-align: center;
         display: block;
         color: white;
-        grid-area: 3 / 1 / 4 / 2;
+
         background:url("images/img3.jpg"); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .div5 .head{
         margin-top:10%;
@@ -309,7 +319,7 @@ i{
     .div6 { 
         display: block;
         text-align: center;
-        grid-area: 3 / 2 / 4 / 3; 
+         
         background: url("images/img4.jpg");
         background-position: center;
         background-size: cover;
@@ -345,6 +355,9 @@ footer div p{
     color: rgb(129,129,130);
     margin: 1% 0;
 }
+.div1 ,.div2 ,.div3,.div4,.div5,.div6{
+    margin: 0px;
+}
 @media (max-width: 768px){
     body {
         overflow-x: hidden;
@@ -359,15 +372,13 @@ footer div p{
         display: none;
     }
     .container_3{
-        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
     .div1 ,.div2 ,.div3,.div4,.div5,.div6{
         height: 80vh;
-        width: 100%;
-    }
-    .div2 ,.div4,.div6{
-        margin-right:0px;
+        width: 97%;
     }
     .container_2 .head{
         font-size: 2rem;
