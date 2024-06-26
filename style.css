@@ -313,6 +313,7 @@ i{
     .div6 .head{
         margin-top:9.5%;
     }
+
     .div6 .lm{
         
         margin: 1% 0;
@@ -357,5 +358,11 @@ footer div p{
     }
     .div1 ,.div2 ,.div3,.div4,.div5,.div6{
         height: 80vh;
+    }
+    .div2 ,.div4,.div6{
+        margin-right:0px;
+    }
+    .container_2 .head{
+        font-size: 2rem;
     }
 }
